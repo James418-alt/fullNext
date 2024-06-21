@@ -3,7 +3,7 @@ import React from "react";
 import { BsGoogle } from "react-icons/bs";
 import { GrGithub } from "react-icons/gr";
 
-const Page = () => {
+const page = () => {
   const mainAction = async (formData: FormData) => {
     "use server";
     const name = formData.get("name");
@@ -69,4 +69,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;

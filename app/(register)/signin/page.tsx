@@ -3,7 +3,7 @@ import React from "react";
 import { BsGoogle } from "react-icons/bs";
 import { GrGithub } from "react-icons/gr";
 
-const Page = () => {
+const page = () => {
   return (
     <form className="flex justify-center items-center w-full h-[100vh] bg-red-50">
       <div className="p-5 border flex flex-col gap-6 ">
@@ -52,4 +52,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
