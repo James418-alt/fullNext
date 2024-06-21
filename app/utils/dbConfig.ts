@@ -1,5 +1,5 @@
 import { connect } from "mongoose";
-const url = "mongodb://localhost:27017/cloudinaryPrac";
+const url = process.env.URL as string;
 
 export const dbConfig = async () => {
   await connect(url)
