@@ -13,7 +13,7 @@ const page = () => {
     const url = "https://full-next-wt9o.vercel.app/api/user";
     await fetch(url, {
       method: "POST",
-      headers: { "content-type": "application/json" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, password }),
     });
   };
