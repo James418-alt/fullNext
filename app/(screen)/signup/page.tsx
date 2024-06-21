@@ -4,23 +4,23 @@ import { BsGoogle } from "react-icons/bs";
 import { GrGithub } from "react-icons/gr";
 
 const page = () => {
-  const mainAction = async (formData: FormData) => {
-    "use server";
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const password = formData.get("password");
+  // const mainAction = async (formData: FormData) => {
+  //   "use server";
+  //   const name = formData.get("name");
+  //   const email = formData.get("email");
+  //   const password = formData.get("password");
 
-    const url = "https://full-next-wt9o.vercel.app/api/user";
-    await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, password }),
-    });
-  };
+  //   const url = "https://full-next-wt9o.vercel.app/api/user";
+  //   await fetch(url, {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({ name, email, password }),
+  //   });
+  // };
 
   return (
     <form
-      action={mainAction}
+      // action={mainAction}
       className="flex justify-center items-center w-full h-[100vh] bg-red-50"
     >
       <div className="p-5 border flex flex-col gap-6 ">
